@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500&family=Roboto:wght@400;500&display=swap');
 
 :root {
    --primary: #ffff;
@@ -183,7 +183,7 @@ header::before {
    max-height: max-content;
    background-color: var(--secondary);
    margin-left: -8.5rem;
-   margin-top: 4.5rem;
+   margin-top: 4.25rem;
    text-align: left;
    display: flex;
    flex-direction: column;
@@ -227,15 +227,18 @@ header::before {
 }
 
 .featured-header {
+   font-weight: 400;
    text-align: center;
    color: var(--secondaryText);
-   font-size: 3.5rem;
+   font-size: 3.75rem;
    padding: 2rem 1rem 1rem 1rem;
 }
 
 .service-container {
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
+   padding-bottom: 2rem;
 }
 .service1,
 .service2,
@@ -253,16 +256,81 @@ header::before {
    width: 100%;
 }
 .service-title {
-   padding: 0.5rem 1.5rem;
+   font-weight: 500;
+   font-size: 1.2rem;
+   padding: 0.75rem 1.5rem;
 }
 .service-desc {
    padding: 0 0.5rem;
+   font-weight: 300;
 }
 .iconify2 {
    background-color: var(--secondaryText);
    border-radius: 50%;
    color: #d21d1d;
    margin: 1rem 0 1rem 13.5rem;
+}
+
+/*////////////////////BOOKING ////////////*/
+.appointment-section {
+   display: flex;
+   justify-content: center;
+   padding: 2.5rem;
+}
+.img-bookingSection {
+   padding: 1rem;
+   width: 45%;
+   height: 32rem;
+   object-fit: cover;
+   flex-shrink: 0;
+}
+.form-container {
+   background-color: var(--secondary);
+   width: 40%;
+   min-width: 31rem;
+   height: 24rem;
+   display: flex;
+   margin-left: -8.5rem;
+   margin-top: 4.25rem;
+   flex-direction: column;
+   padding: 2rem 1rem;
+}
+.form-container h2 {
+   text-align: center;
+   color: var(--secondaryText);
+   margin-bottom: 1rem;
+}
+.form-container h2 span {
+   color: var(--yellow);
+}
+.form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+}
+input {
+   height: 2.5rem;
+   border: 1px solid black;
+   margin: 0.75rem 0.5rem;
+   background-color: var(--primary);
+   width: 13rem;
+}
+select {
+   width: 96.5%;
+   margin: 0.75rem 0.5rem;
+   height: 2.5rem;
+   border: 1px solid black;
+   background-color: var(--primary);
+}
+
+.btn-submit {
+   background-color: var(--callToAction);
+   border: none;
+   color: var(--secondaryText);
+   padding: 1rem 1.25rem;
+   border-radius: 0.25rem;
+   margin: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -306,13 +374,9 @@ header::before {
    .about-us {
       justify-content: center;
    }
-   .img {
-      display: inline-block;
-      justify-content: center;
-   }
    .about-content {
       text-align: center;
-      min-width: 50%;
+      min-width: 60%;
       padding: 1rem 1.5rem;
    }
    .about-header {
@@ -331,7 +395,7 @@ header::before {
       margin: auto;
    }
    .header-intro h1 {
-      padding: 0.5rem;
+      padding: 1rem;
       line-height: 1.25;
    }
    .header-intro p {
@@ -348,7 +412,22 @@ header::before {
 
    .about-content {
       height: auto;
-      width: 90%;
+      width: 100%;
       margin: auto;
+      padding: 0.5rem;
+   }
+   /* FEATURED SERVICE */
+   .iconify2 {
+      margin: 1rem 0 1rem 10rem;
+   }
+   /* BOOKING */
+   .img-bookingSection {
+      display: none;
+   }
+   .form-container {
+      margin: auto;
+      height: auto;
+      width: 30%;
+      padding: 1rem;
    }
 }
