@@ -19,6 +19,7 @@
 body,
 html {
    font-family: Poppins;
+   scroll-behavior: smooth;
 }
 a {
    text-decoration: none;
@@ -362,14 +363,15 @@ footer {
    flex-shrink: 0;
 }
 .social-media h3 {
-   font-size: 1.5rem;
+   font-size: 1.35rem;
    font-weight: 500;
    color: var(--secondaryText);
 }
 
 .social {
+   color: var(--grey1);
    margin: auto;
-   font-size: 2rem;
+   font-size: 1.75rem;
 }
 
 .footer-links {
@@ -381,15 +383,15 @@ footer {
 .footer-links > article h2 {
    color: var(--secondaryText);
    font-weight: 500;
-   font-size: 1.75rem;
+   font-size: 1.45rem;
 }
 .footer-links > article p {
    color: var(--grey1);
+   font-weight: 300;
 }
 
 .copyrights {
    color: var(--secondaryText);
-   padding: 1rem 0.5rem;
 }
 @media screen and (max-width: 1024px) {
    .logo {
