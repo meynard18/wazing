@@ -118,6 +118,10 @@ header::before {
    z-index: 5;
 }
 
+.btn-request a {
+   color: var(--secondaryText);
+}
+
 .btn-request {
    background-color: var(--callToAction);
    font-size: 1rem;
@@ -125,7 +129,7 @@ header::before {
    font-weight: 400;
    font-family: Montserrat;
    padding: 1rem;
-   color: var(--secondaryText);
+
    margin-top: 2rem;
    border-radius: 0.25rem;
 }
@@ -378,11 +382,11 @@ footer {
    display: flex;
    margin: auto;
    padding: 0.5rem;
-   gap: 4rem;
+   gap: 8rem;
 }
 .footer-links > article h2 {
    color: var(--secondaryText);
-   font-weight: 500;
+   font-weight: 400;
    font-size: 1.45rem;
 }
 .footer-links > article p {
@@ -437,10 +441,9 @@ footer {
    .about-content {
       text-align: center;
       min-width: 60%;
-      padding: 1rem 1.5rem;
    }
    .about-header {
-      font-size: 1.85rem;
+      font-size: 2rem;
    }
 
    /* FOOTER */
@@ -490,9 +493,9 @@ footer {
 
    .about-content {
       height: auto;
-      width: 100%;
+      width: 80%;
       margin: auto;
-      padding: 0.5rem;
+      padding: 1rem;
    }
    /* FEATURED SERVICE */
    .iconify2 {
