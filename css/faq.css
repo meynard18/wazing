@@ -249,7 +249,7 @@ footer {
    .nav-list {
       position: fixed;
       left: 100%;
-      top: 8vh;
+      top: 12vh;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -261,7 +261,7 @@ footer {
       text-align: center;
    }
    .nav-list a {
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 4rem;
       color: var(--secondary);
    }
@@ -270,6 +270,14 @@ footer {
    }
    .nav-list.active {
       left: 0;
+   }
+   .dropdown-content {
+      margin-top: 0;
+      width: max-content;
+   }
+   .dropdown-content a {
+      font-size: 1rem;
+      line-height: inherit;
    }
 
    /* FOOTER */
@@ -289,7 +297,7 @@ footer {
       margin: auto;
    }
    .nav-list {
-      top: 12vh;
+      top: 8vh;
    }
    header {
       text-align: center;
@@ -332,9 +340,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-   .nav-list {
-      top: 16vh;
-   }
    header {
       padding-left: 0.5rem;
       padding-right: 0.5rem;
