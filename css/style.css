@@ -605,6 +605,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+   .nav-list {
+      top: 11vh;
+   }
    .about-content {
       width: 90%;
       min-width: none;
@@ -636,6 +639,9 @@ footer {
    }
 }
 @media screen and (max-width: 360px) {
+   .nav-list {
+      top: 12vh;
+   }
    .footer-container > article p {
       font-size: 0.7rem;
    }

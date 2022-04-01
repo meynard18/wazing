@@ -341,6 +341,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+   .nav-list {
+      top: 11vh;
+   }
    header {
       padding-left: 0.5rem;
       padding-right: 0.5rem;
@@ -366,6 +369,9 @@ footer {
    }
 }
 @media screen and (max-width: 360px) {
+   .nav-list {
+      top: 12vh;
+   }
    .footer-container > article p {
       font-size: 0.7rem;
    }
