@@ -12,11 +12,11 @@
 
 ## Technologies 🔥
 
-HTML5, CSS, and Javascript was used to complete this project. One of the focus for this project is to ensure that the website ranks high for SEO in the area. In order to achieve this, use of HTML5 semantics was carefully executed.
+HTML5, CSS, and Javascript was used to complete this project. One of the focus for this project is to ensure that the website ranks high for SEO in the area.
 
 ## Objective‼
 
-The objective for this project is to create a modern website that focus on simplicity, easy navigation, and SEO ranking. 
+The objective for this project is to create a modern website that focuses on simplicity, easy navigation, and SEO ranking. To achieve this, proper use of HTML5 semantic and including a great meta description had to be carefully executed.
 
 ## Features for the Future 💯💯
 
