@@ -17,19 +17,32 @@
                </li>
 
                <li class="nav-link">
-                  <a class="nav-a" href="index.html">ABOUT US</a>
+                  <a class="nav-a" href="index.html#about">ABOUT US</a>
                </li>
-               <li class="nav-link">
-                  <a class="nav-a" href="services">SERVICES</a>
+               <li class="nav-link dropdown">
+                  <a class="nav-a dropbtn" href="index.html#services"
+                     >SERVICES</a
+                  >
+                  <div class="dropdown-content">
+                     <a href="service1.html"> Hardwood Floors Screen & Coat </a>
+                     <a href="service2.html">Hardwood Floors Refinishing</a>
+                     <a href="service3.html">Hardwood Floors Installation</a>
+                  </div>
                </li>
                <li class="nav-link">
                   <a class="nav-a" href="faq.html">FAQ'S</a>
                </li>
                <li class="nav-link">
-                  <a class="nav-a" href="">CONTACT US</a>
+                  <a class="nav-a" href="index.html#appointment-section"
+                     >CONTACT US</a
+                  >
                </li>
             </ul>
-            <span class="iconify hidden" data-icon="bx:menu-alt-right"></span>
+
+            <span
+               class="iconify hidden btnMenu"
+               data-icon="eva:menu-fill"
+            ></span>
          </nav>
          <main>
             <section class="section1">
@@ -90,39 +103,56 @@
          </main>
          <footer>
             <div class="footer-container">
-               <div class="social-media">
-                  <h3>Follow Us</h3>
-                  <div>
-                     <span
-                        class="iconify social"
-                        data-icon="akar-icons:instagram-fill"
-                     ></span>
-                     <span
-                        class="iconify social"
-                        data-icon="ant-design:facebook-outlined"
-                     ></span>
-                  </div>
-               </div>
-               <div class="footer-links">
-                  <article>
-                     <h2>Resources</h2>
-                     <p>service1</p>
-                     <p>service2</p>
-                     <p>service3</p>
-                  </article>
+               <article class="social-media">
+                  <h3>FOLLOW US</h3>
+                  <span>
+                     <a
+                        href="https://www.instagram.com/wazingwoodflooring/"
+                        target="_blank"
+                        rel="noreferrer"
+                     >
+                        <span
+                           class="iconify social"
+                           data-icon="akar-icons:instagram-fill"
+                        ></span
+                     ></a>
 
-                  <article>
-                     <h2>Services</h2>
-                     <p>service1</p>
-                     <p>service2</p>
-                     <p>service3</p>
-                  </article>
-                  <article>
-                     <h2>Contact</h2>
-                     <p>wazing@gmail.com</p>
-                     <p>123-456-7643</p>
-                  </article>
-               </div>
+                     <a
+                        href="https://www.facebook.com/Wazingwoodflooring"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><span
+                           class="iconify social"
+                           data-icon="ant-design:facebook-outlined"
+                        ></span
+                     ></a>
+                  </span>
+               </article>
+               <article class="footer-services">
+                  <h3>SERVICES</h3>
+                  <p>Screen & Coat</p>
+                  <p>Installation</p>
+                  <p>Refinishing</p>
+                  <p>Wax Removal</p>
+                  <p>Floor Sanding</p>
+               </article>
+               <article class="footer-resources">
+                  <h3>RESOURCES</h3>
+                  <p>About Us</p>
+                  <p>FAQ's</p>
+                  <p>Promotional</p>
+               </article>
+
+               <article class="footer-contact">
+                  <h3>CONTACT</h3>
+                  <p>wazing@gmail.com</p>
+                  <p>123-456-7643</p>
+               </article>
+               <article class="footer-legal">
+                  <h3>LEGAL</h3>
+                  <p>Terms & Conditions</p>
+                  <p>Privacy Policy</p>
+               </article>
             </div>
 
             <span class="copyrights"
@@ -131,5 +161,6 @@
          </footer>
       </div>
       <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+      <script src="js/main.js"></script>
    </body>
 </html>

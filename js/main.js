@@ -1,12 +1,11 @@
-'use strict';
+/* 'use strict'; */
 
-const btnMenu = document.querySelector('.btnMenu');
 const navList = document.querySelector('.nav-list');
 const navA = document.querySelectorAll('.nav-a');
+const bodyEl = document.getElementsByTagName('body');
 
 const navBtn = function () {
-   btnMenu.addEventListener('click', function () {
-      console.log('clicked');
+   document.querySelector('.btnMenu').addEventListener('click', function () {
       navList.classList.toggle('active');
       closeNav();
    });
@@ -20,4 +19,8 @@ function closeNav() {
    }
 }
 
-navBtn();
+document.onreadystatechange = function () {
+   if (document.readyState == 'complete') {
+      navBtn();
+   }
+};

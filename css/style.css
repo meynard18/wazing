@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Montserrat&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 :root {
    --primary: #ffff;
@@ -58,9 +58,17 @@ nav ul {
 nav ul li a {
    font-family: Montserrat;
    color: var(--secondaryText);
-   margin: 0.5rem;
    font-size: 0.9rem;
+   padding: 0.5rem 0.75rem;
+   display: flex;
+   align-items: center;
 }
+nav ul li a:hover {
+   background-color: var(--callToAction);
+   padding: 0.5rem 0.75rem;
+   border-radius: 0.25rem;
+}
+
 .dropdown {
    position: relative;
    display: inline-block;
@@ -68,7 +76,7 @@ nav ul li a {
 .dropdown-content {
    display: none;
    position: absolute;
-   background-color: white;
+   background-color: var(--secondaryText);
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    z-index: 1;
    border-radius: 0.5rem;
@@ -87,7 +95,6 @@ nav ul li a {
    border-radius: 0.25rem;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
    display: block;
 }
@@ -117,7 +124,7 @@ header::before {
    left: 0;
    width: 100%;
    height: 100%;
-   background: rgba(0, 0, 0, 0.45);
+   background: rgba(0, 0, 0, 0.5);
 }
 
 .header-intro {
@@ -133,14 +140,15 @@ header::before {
 }
 
 .header-intro h1 {
-   line-height: 1.6;
-   font-size: 4rem;
-   font-weight: 400;
+   font-family: 'Alumni Sans Inline One', cursive;
+   line-height: 1.2;
+   font-size: 5.25rem;
+   font-weight: 300;
 }
 
 .header-intro p {
    max-width: 35rem;
-   font-size: 1.2rem;
+   font-size: 1.45rem;
    line-height: 1.6;
 }
 
@@ -359,7 +367,7 @@ input {
 
 ::-webkit-input-placeholder {
    padding-left: 1rem;
-   color: var(--grey2);
+   color: var(--primaryText);
 }
 select {
    width: 96.5%;
@@ -368,7 +376,7 @@ select {
    border: 1px solid black;
    background-color: var(--primary);
    padding-left: 1rem;
-   color: var(--grey2);
+   color: var(--primaryText);
 }
 
 .btn-submit {
@@ -450,7 +458,7 @@ footer {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      background-color: #fff;
+      background-color: var(--secondaryText);
       width: 100%;
       transition: 0.4s;
       height: 100vh;
@@ -461,8 +469,15 @@ footer {
       line-height: 4rem;
       color: var(--secondary);
    }
+   .nav-list a:hover {
+      color: var(--secondaryText);
+   }
    .nav-list.active {
       left: 0;
+   }
+   .dropdown-content {
+      margin-top: 0;
+      width: 100%;
    }
 
    .header-intro {
@@ -473,12 +488,12 @@ footer {
    }
    .header-intro h1 {
       line-height: 1.6;
-      font-size: 3rem;
+      font-size: 3.5rem;
    }
 
    .header-intro p {
       max-width: 35rem;
-      font-size: 1rem;
+      font-size: 1.25rem;
    }
 
    .about-us {
