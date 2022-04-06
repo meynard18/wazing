@@ -289,9 +289,7 @@ header::before {
    flex-wrap: wrap;
    padding-bottom: 4rem;
 }
-.service1,
-.service2,
-.service3 {
+.service {
    background-color: var(--secondary);
    display: flex;
    flex-direction: column;
@@ -301,9 +299,18 @@ header::before {
    text-align: center;
    color: var(--secondaryText);
 }
+.service:hover img {
+   transform: scale(1.2);
+}
+.service-imgContainer {
+   overflow: hidden;
+}
 .service-img {
    width: 100%;
+   display: block;
+   transition: 0.3s ease-in-out;
 }
+
 .service-title {
    font-weight: 500;
    font-size: 1.2rem;
